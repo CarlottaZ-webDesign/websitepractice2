@@ -1,0 +1,160 @@
+/* General Styles */
+
+
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* Container */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+    gap: 0;
+}
+
+/* Header */
+.header {
+    grid-column: 1 / 3;
+    background: #9480cc;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.logo-img {
+    max-width: 47px;
+}
+
+.logo-line {
+    width: 100%; /* Make it full width or adjust as needed */
+    height: 194px; /* Thickness of the line */
+    background: #A876B8; /* Slightly darker light purple gradient */
+    margin-top: -153px; /* Space between logo and the line */
+}
+
+#footer-logo {
+    max-width: 50px;
+    margin: 20px auto; /* Center the footer logo */
+    display: block;
+}
+
+.footer-logo-line {
+    width: 100%;
+    height: 4px;
+    background:#A876B8;
+    margin: -811px auto; /* Space above the footer line */
+}
+
+.art-img {
+    max-width: 80%; /* Adjust the size (80% of the container's width) */
+    height: auto;   /* Maintain aspect ratio */
+    margin: auto;   /* Center the image within its column if needed */
+}
+
+.art-img {
+    width: 200px;  /* Set a fixed width */
+    height: 263px; /* Set a fixed height */
+    object-fit: cover; /* Ensures images fill the area without distortion */
+    margin: 0 auto; /* Center the image in its column */
+}
+
+
+/* Line Styling */
+.footer-line {
+    width: 100%; /* Full width */
+    height: 4px; /* Thickness of the line */
+    background-color: #A876B8; /* Light purple */
+    margin: 40; /* Removes default margin */
+}
+/* Sidebar */
+.sidebar {
+    grid-column: 1 / 2;
+    background-color: #f8e9f0;
+    padding: 20px;
+    border-right: 1px solid #c3c3c3;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.email {
+    margin-top: 30px;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+/* Main Content */
+.main-content {
+    grid-column: 2 / 3;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.image-collage {
+    text-align: center;
+}
+
+.image-collage .main-image {
+    max-width: 80%;
+    height: auto;
+    border: 1px solid #d3c9f0;
+}
+
+.text-content {
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: #444;
+}
+
+/* Gallery Images */
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.image-gallery img {
+    max-width: 33%;
+    border: 2px solid #d3c9f0;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+    grid-column: 1 / 3;
+    background-color: #d3c9f0;
+    text-align: center;
+    padding: 24px 0;
+}
+
+.footer-logo img {
+    max-width: 50px;
+}
+
+
+
+
+
+
